@@ -1,8 +1,8 @@
 .container {
   width: 100%;
   margin-inline: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
 }
 
 .padding-block {
@@ -69,15 +69,30 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-@media (max-width: 640px) {
+@media (min-width: 300px) {
+  .heading-1 {
+    font-size: $fs-head * 0.5;
+  }
+
+  .heading-2 {
+    font-size: $fs-head-secondary * 0.85;
+  }
+
+  .padding-block {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 640px) {
   .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     max-width: 640px;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -85,7 +100,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .container {
     padding-left: 4.5rem;
     padding-right: 4.5rem;
@@ -93,7 +108,7 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
   .container {
     padding-left: 5.75rem;
     padding-right: 5.75rem;
@@ -101,7 +116,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1536px) {
   .container {
     padding-left: 7rem;
     padding-right: 7rem;

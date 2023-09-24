@@ -1,3 +1,5 @@
+import hamburgerMenu from "../assets/Hamburger Menu.svg";
+
 function Navbar() {
   return (
     <header className="container flex padding-block-sm" id="header">
@@ -19,6 +21,8 @@ function Navbar() {
           </li>
         </ul>
       </nav>
+
+      <img src={hamburgerMenu} className="hamburger" />
 
       <button className="btn btn-primary">Get in touch</button>
     </header>
