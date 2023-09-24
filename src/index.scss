@@ -143,7 +143,7 @@ img {
   }
 }
 
-@media (min-width: 300px) {
+@media (min-width: 300px) and (max-width: 640px) {
   body {
     font-size: $fs-body * 0.85;
   }
@@ -162,6 +162,10 @@ img {
 
   #intro {
     width: 100%;
+
+    .description {
+      width: 100%;
+    }
 
     display: flex;
     flex-direction: column;
@@ -206,16 +210,87 @@ img {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 640px) and (max-width: 768px) {
+  body {
+    font-size: $fs-body * 1.2;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  #header > button {
+    display: none;
+  }
+
+  #intro {
+    width: 100%;
+
+    .description {
+      width: 100%;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #companies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+
+    // li:nth-child(2n) {
+    //   justify-self: start;
+    // }
+
+    li img {
+      height: 22px;
+    }
+  }
+
+  #projects {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    .project-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  #about {
+    .even-columns {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #cta > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    .heading-2 {
+      width: auto;
+    }
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1280px) and (max-width: 1536px) {
 }
 
 @media (min-width: 1536px) {
