@@ -32,3 +32,6 @@ For body: https://fonts.google.com/specimen/Inter
 Yellow Color: #FBE850
 Dark Background Color: #0A0A0B
 Dark Blue Color: #2E3038
+
+Project Started: 11 a.m
+Estimated Time: 5 hours
