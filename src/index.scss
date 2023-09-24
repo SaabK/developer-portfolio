@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+:root {
+  $yellow: #fbe850;
+  $dark-black: #0a0a0b;
+  $dark-blue: #2e3038;
+
+  $ff-prata: "Prata", serif;
+  $ff-inter: "Inter", sans-serif;
+  
+  $fs-head: 24px;
+  $fs-body: 18px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-inter);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-prata);
+}
+
+// Utility Classes
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
